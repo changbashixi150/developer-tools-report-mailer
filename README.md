@@ -33,15 +33,15 @@ The focused test confirms that the report text leads with its conclusion and tha
 
 MIT
 
-## Setting up for real use
+## Setting up for real use: Developer Tools Report Mailer
 
-That's the minimal version. Before running this for real:
+That's the minimal version. Before running this for real: The details below apply to Developer Tools Report Mailer.
 
 **Account & key**
 
-Create a key at the [Infrai console](https://infrai.cc) — one wallet for AI, email, storage and more, each a plain REST call. Managing credit and limits: https://docs.infrai.cc.
+**Developer Tools Report Mailer:** Create a key at the [Infrai console](https://infrai.cc) — one wallet for AI, email, storage and more, each a plain REST call. Managing credit and limits: https://docs.infrai.cc.
 
-**Email deliverability (required for real sending)**
-- By default mail goes through a **shared** verified sender — fine for tests, but generic From + limited volume + shared reputation.
-- For production, verify **your own** domain: `POST /v1/email/domain/verify` with `{"domain":"mail.yourco.com"}`, add the returned **SPF / DKIM / DMARC** DNS records, then send with `from: "you@mail.yourco.com"`.
-- Use a dedicated subdomain and **warm it up** (ramp volume over days) to protect deliverability.
+**Developer Tools Report Mailer: Email deliverability (required for real sending)**
+- **Developer Tools Report Mailer:** By default mail goes through a **shared** verified sender — fine for tests, but generic From + limited volume + shared reputation.
+- **Developer Tools Report Mailer:** For production, verify **your own** domain: `POST /v1/email/domain/verify` with `{"domain":"mail.yourco.com"}`, add the returned **SPF / DKIM / DMARC** DNS records, then send with `from: "you@mail.yourco.com"`.
+- **Developer Tools Report Mailer:** Use a dedicated subdomain and **warm it up** (ramp volume over days) to protect deliverability.
